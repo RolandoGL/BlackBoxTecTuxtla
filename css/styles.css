@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Sixtyfour&family=Unica+One&display=swap');
+
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(255, 255, 255);
+    -primary-color-text: rgb(255, 255, 255);
+    -bg-primary: rgb(0, 0, 0);
+    -bg-secondary: rgb(255, 255, 255);
+    --transition-1: all 500ms ease;
+    --transition-2: all 1000ms ease,
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hover-animation,
+.hover-animation-2,
+.hover-animation-color {
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.hover-animation-bg {
+    transition: all 400ms ease;
+}
+
+.hover-animation-color:hover {
+    background-image: linear-gradient(180deg, rgba(237, 255, 0, 1) 0%,
+            rgba(255, 0, 44, 1) 35%,
+            rgba(0, 212, 255, 1) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 100% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-animation-bg:hover {
+    background-color: black;
+    box-shadow: 0px 0px 20px 2px rgb(241, 48, 255);
+    transform: scale(1.15);
+}
+.hover-animation-2:hover {
+    transform: scale(1.1);
+}
+
+.hover-animation:hover {
+    transform: scale(1.33);
+    font-size: 1.33rem;
+    box-shadow: 0px 0px 6px 2px rgb(84, 75, 254);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-h1 {
+    font-size: 1.22rem;
+    color: var(--secondary-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-footer {
+    width: max-content;
+    height: max-content;
+    margin: 10px auto 5px auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: auto;
+}
+
+.card-body {
+    gap: 8px;
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+    color: rgb(245, 222, 179);
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+body {
+    background-image: url("../assets/bg-2.jpg");
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.header-image-container {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes textclip {
+    0% {
+        background-position: 0% 99%
+    }
+
+    50% {
+        background-position: 100% 2%
+    }
+
+    100% {
+        background-position: 0% 99%
+    }
+}
+
+.navbar {
+    padding: 5px;
+    width: calc(100% - 200px);
+    flex-grow: 1;
+}
+
+.navbar-list {
+    list-style: none;
+    gap: 10px;
+    justify-content: end;
+}
+
+.navbar-link {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 5px;
+    width: 28px;
+    height: 28px;
+}
+
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+    height: 60px;
+    color: var(--secondary-color);
+}
+
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    flex-direction: column;
+    transition: all 700ms ease;
+}
+
+.loader-container:hover {
+    background-color: rgb(31, 30, 30);
+}
+
+.loader-hidden {
+    z-index: -1;
+    opacity: 0;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-logo {
+    /* font-size: 7rem; */
+    font-size: 2rem;
+    width: max-content;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Sixtyfour', sans-serif;
+}
+svg{
+    width:  80px;
+    height: 80px;
+}
+.text-logo {
+    background: linear-gradient(228deg, #0035ff, #fff900);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: bgAnimation 15s ease infinite;
+    animation: bgAnimation 15s ease infinite;
+}
+
+@-webkit-keyframes bgAnimation {
+    0% {
+        background-position: 0% 96%
+    }
+
+    50% {
+        background-position: 100% 5%
+    }
+
+    100% {
+        background-position: 0% 96%
+    }
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 96%
+    }
+
+    50% {
+        background-position: 100% 5%
+    }
+
+    100% {
+        background-position: 0% 96%
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .text-logo {
+        font-size: 7rem;
+    }
+    svg{
+        width:  200px;
+        height: 200px;
+    }
+    .container {
+        width: 1200px;
+        height: 100%;
+        margin: auto;
+    }
+
+    .text-h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-link {
+        font-size: 1.3rem;
+        padding: 6.5px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .text-body {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 400px;
+        height: 250px;
+    }
+}
