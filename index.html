@@ -12,8 +12,30 @@
     <title>BlackBox</title>
 </head>
 
-<body style="height: 100vh;">
-    <div class="loader-container">
+<body>
+    <section class="header-section">
+        <figure class="header-image-container d-flex">
+            <img src="./assets/cube-logo.svg" alt="" class="header-image">
+            <!-- <h1 class="text-h1">BlackBox</h1> -->
+        </figure>
+        <header class="header">
+            <nav class="navbar">
+                <ul class="navbar-list d-flex justify-content">
+                    <li class="navbar-item">
+                        <a href="#" class="link" style="font-size: 1.4rem;">Inicio</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="link" style="font-size: 1.4rem;">Proyectos</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="link" style="font-size: 1.4rem;">Proyectos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="main-container">
+        <div class="loader-container">
         <div class="loader">
             <h1 class="text-logo">BlackBox</h1>
             <div class="loader-item hover-animation-2">
@@ -24,64 +46,70 @@
                 </svg>
             </div>
         </div>
-        <h2 class="btn hover-animation js-btn-inicio">Ver mas</h2>
+        <h2 class="btn hover-animation js-btn-inicio">Conocenos</h2>
     </div>
-    <section class="header-section">
-        <header class="header">
-            <figure class="header-image-container d-flex">
-                <img src="./assets/cube-logo.svg" alt="" class="header-image">
-                <h1 class="text-h1">BlackBox</h1>
-            </figure>
-
-            <nav class="navbar">
-                <ul class="navbar-list d-flex">
-                    <li class="navbar-item">
-                        <a href="https://www.facebook.com/blackbox.tecnologys/" class="navbar-link hover-animation"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="https://www.tiktok.com/@blackboxtec" class="navbar-link hover-animation"><i class="fab fa-tiktok"></i></a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="https://www.instagram.com/blackboxtecnology2024/" class="navbar-link hover-animation"><i class="fab fa-instagram-square"></i></a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="https://github.com/blackboxtecno" class="navbar-link hover-animation"><i class="fab fa-github"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-    <section class="body-section" style="height: 100%;">
-        <div class="container d-flex">
-            <div class="card hover-animation-bg">
-                <div class="card-title">
-                    <h1 class="title text-h1 text-center">Servicio de Desarrollo de Software</h1>
+        <section class="body-section">
+            <div class="circulo"></div>
+            <div class="container d-flex">
+                <div class="card">
+                    <div class="card-title">
+                        <h1 class="title text-center">BlackBoxTuxtla</h1>
+                    </div>
+                    <div class="card-body d-flex">
+                        <P class="description text-center text-body">Más que un servicio de Desarrollo de Software</P>
+                        <p class="description text-center text-body">
+                            Somos lo que estabas buscando. Nos encargamos de hacer realidad tus ideas, conocenos!
+                        </p>
+                        <!-- <p class="description text-center text-body">Contactanos en: blackboxtextux@gmail.com</p> -->
+                    </div>
+                    <div class="card-footer">
+                        <a href="portafolio.html" class="link btn-secondary hover-animation">Conoce nuestro trabajo</a>
+                    </div>
                 </div>
-                <div class="card-body d-flex">
-                    <p class="description text-center text-body">Desarrollamos todo tipo de software para starups
-                        pequeñas, medianas o grandes.</p>
-                    <p class="description text-center text-body">Contactanos en: blackboxtextux@gmail.com</p>
-                </div>
-                <div class="card-footer">
-                    <a href="portafolio.html" class="link btn-secondary hover-animation">Conoce nuestro trabajo</a>
+                <div class="d-flex logos-container">
+                    <figure class="img-container angular">
+                        <img src="./assets/angular-logo.png" alt="">
+                    </figure>
+                    <figure class="img-container react">
+                        <img src="./assets/react-logo.png" alt="">
+                    </figure>
+                    <figure class="img-container vue">
+                        <img src="./assets/vue-logo.png" alt="">
+                    </figure>
+                    <p class="text">Make it happen  <i class="far fa-smile-wink"></i></p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="footer-section">
-        <footer>
-            <div class="footer">
-                <small class="text-center">Siguenos en Facebook e Instagram <a href="" class="link">
-                        @BlackBoxTecTuxtlaOficial </a></small>
-
-            </div>
-        </footer>
-    </section>
+        </section>
+        <section class="footer-section">
+            <footer>
+                <nav class="navbar">
+                    <ul class="navbar-list d-flex d-flex-column gap-1">
+                        <li class="navbar-item">
+                            <a href="https://www.facebook.com/blackbox.tecnologys/"
+                                class="navbar-link hover-animation"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="https://www.tiktok.com/@blackboxtec" class="navbar-link hover-animation"><i
+                                    class="fab fa-tiktok"></i></a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="https://www.instagram.com/blackboxtecnology2024/"
+                                class="navbar-link hover-animation"><i class="fab fa-instagram-square"></i></a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="https://github.com/blackboxtecno" class="navbar-link hover-animation"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+    </div>
     <script>
         const loaderContainer = document.querySelector(".loader-container")
-        const btnInicio       = document.querySelector(".js-btn-inicio")
+        const btnInicio = document.querySelector(".js-btn-inicio")
 
-        btnInicio.addEventListener('click', ()=>{
+        btnInicio.addEventListener('click', () => {
             loaderContainer.classList.add('loader-hidden')
         })
     </script>
